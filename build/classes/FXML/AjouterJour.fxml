@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="730.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.AjouterJourController">
+   <children>
+      <Label fx:id="label_annee" layoutX="187.0" layoutY="130.0" text="Année : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_mouled" layoutX="186.0" layoutY="174.0" prefHeight="27.0" prefWidth="110.0" text="Le Mouled :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_aid_fitr" layoutX="185.0" layoutY="219.0" text="Aid Al Fitr :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_aid_idha" layoutX="186.0" layoutY="266.0" text="Aid Al Idha :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_jour_de_l_an" layoutX="185.0" layoutY="315.0" text="Jour de l'an Hégirien :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="champ_annee" layoutX="372.0" layoutY="131.0" />
+      <TextField fx:id="champ_mouled" layoutX="373.0" layoutY="175.0" />
+      <TextField fx:id="champ_aid_fitr" layoutX="373.0" layoutY="220.0" />
+      <TextField fx:id="champ_aid_idha" layoutX="374.0" layoutY="267.0" />
+      <TextField fx:id="champ_jour_an_hegirien" layoutX="374.0" layoutY="315.0" />
+      <Button fx:id="btn_ajouter" layoutX="336.0" layoutY="380.0" mnemonicParsing="false" onAction="#ajouterJour" text="Ajouter" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="142.0" fitWidth="157.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo_steg.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_tableau" layoutX="596.0" layoutY="432.0" mnemonicParsing="false" onAction="#redirigerTableau" prefHeight="27.0" prefWidth="96.0" text="Tableau" />
+   </children>
+</AnchorPane>
